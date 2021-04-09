@@ -1,0 +1,161 @@
+body {
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: url(img/Rose-Petals.svg);
+  background-size: cover;
+  color: rgb(248, 248, 248);
+  display: flex;
+  justify-content: center;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80vh;
+  margin-top: 10vh;
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  /*   border: 5px solid transparent; */
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+#titre {
+  width: 100%;
+  height: 50px;
+  margin: 0px 0 0 0;
+  padding-top: 5px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-top: 0;
+  border: none;
+}
+#inputContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 50px;
+  width: 350px;
+  height: 50px;
+  border-radius: 0 0 10px 10px;
+}
+#input {
+  color: whitesmoke;
+  font-size: 1.2em;
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: unset;
+  border-radius: 0 0 0 10px;
+  padding-left: 10px;
+}
+#input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+input:focus {
+  outline: none;
+}
+
+#inputBtn {
+  color: whitesmoke;
+  font-size: 1.2em;
+  border-radius: 0 0 10px 0;
+  border: unset;
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#inputBtn:focus {
+  outline: none;
+}
+
+.listes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  overflow: auto;
+  overflow-x: hidden;
+  height: 80vh;
+  width: 350px;
+}
+
+.tache {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 50px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  margin: 0 5px 5px;
+  cursor: pointer;
+}
+
+.modifInput {
+  color: rgb(0, 0, 0);
+  background-color: rgba(251, 56, 56, 0.2);
+  height: 50px;
+  width: 335px;
+  font-size: 1.2em;
+  border: unset;
+  border-radius: 5px;
+  text-align: center;
+  cursor: text;
+}
+
+input[type="checkbox" i] {
+  background-color: unset;
+  appearance: unset;
+  box-sizing: border-box;
+  margin: 3px 3px 3px 10px;
+  padding: initial;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+.checkboxInput {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(172, 108, 108);
+  cursor: pointer;
+}
+
+.checkboxInput:hover {
+  background-color: #ccc;
+  transition-duration: 0.1s;
+}
+.checkboxInput:checked {
+  background-color: rgb(24, 212, 24);
+}
+
+.tache button {
+  color: rgb(128, 16, 16);
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 0 0 10px 0;
+  border: unset;
+  background-color: unset;
+  cursor: pointer;
+}
+.tache button:focus {
+  outline: none;
+}
+.tache button:hover {
+  color: rgb(61, 12, 12);
+  transition-duration: 0.1s;
+}
+/* Pour JS, do not erase */
+.enCours {
+  color: rgb(24, 212, 24);
+}
+.displayNone {
+  display: none;
+}
